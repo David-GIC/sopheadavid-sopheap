@@ -2,10 +2,16 @@
 
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: StaticImageData;
+};
 
 export default function Project({
   title,
