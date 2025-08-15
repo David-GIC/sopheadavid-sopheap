@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+              src="https://raw.githubusercontent.com/David-GIC/video_demo/master/IMG_2772.JPG?fit=crop&w=368&h=368&q=100"
               alt="Ricardo portrait"
               width="500"
               height="500"
               quality="100"
               priority={true}
-              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl scale-[1.2]"
             />
           </motion.div>
 
@@ -64,7 +64,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Sopheadavid SOPHEAP.</span> I'm a{" "}
         <span className="font-bold">Mobile Developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experiences and <span className="font-bold">Backend Developer</span> with{" "} <span className="font-bold">1 year</span>{" "} of experience. I enjoy
+        <span className="font-bold">5 years</span> of experiences and <span className="font-bold">Backend Developer</span> with{" "} <span className="font-bold">1 year</span>{" "} of experience. I enjoy
         building <span className="italic">apps & sites</span>. My focus is{" "}
         <span className="underline">Mobile Development with Flutter</span>.
       </motion.h1>
@@ -97,7 +97,16 @@ export default function Intro() {
           View My CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-
+      </motion.div>
+      <div className="pt-[10px]"></div>
+      <motion.div
+        className="flex flex-row sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+      >
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://www.linkedin.com/in/sopheadavid-sopheap-9a936a180/"
@@ -105,7 +114,7 @@ export default function Intro() {
         >
           <BsLinkedin />
         </a>
-
+        <div className="pw-[10px]"></div>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://t.me/daviddev44"
@@ -113,6 +122,7 @@ export default function Intro() {
         >
           <FaTelegram />
         </a>
+        <div className="pw-[10px]"></div>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
           href="https://facebook.com/nhomvid"

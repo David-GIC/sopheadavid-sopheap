@@ -94,24 +94,61 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "MEF Archives",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "This application is for managing archive documents within Ministry of Economy and Finance. Application provide easy way to receive notification and check monthly, yearly report.",
+    tags: ["Flutter", "Firebase", "Angular", "NodeJS", "ExpressJS", "MongoDB"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Duraseksa",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Duraseksa is an e-learning platform developed by Ministry of Education, Youth and Sports.",
+    tags: ["Flutter", "Firebase", "Angular", "NodeJS", "ExpressJS", "MongoDB"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "MAFF E-Doc",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "E-Doc Management System for Mobile. The features such as: Dashboard, View document in hand, Upload document, Tracking Document, View report etc.",
+    tags: ["Flutter", "Firebase", "Angular", "NodeJS", "ExpressJS", "MongoDB"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "TVET E-Learning",
+    description:
+      "Duraseksa is an e-learning platform developed for TVET.", tags: ["Flutter", "Firebase", "Angular", "NodeJS", "ExpressJS", "MongoDB"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Air Job",
+    description:
+      "Work anytime, get paid instantly with Air Job, you're no longer tied to a strict schedule. Work when it suits you and get paid in 20 minutes or less. No interviews or resumes required.", tags: ["Flutter", "Firebase", "Firestore", "Flutter Web", "Firebase Hosting", "Cloud Storage"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Relaxi",
+    description:
+      "at Relaxy, you can find a professional therapist who will give you a treatment that suits your body. We will introduce you to a therapist near your hotel or home.", tags: ["Flutter", "Firebase", "Firestore", "Flutter Web", "Firebase Hosting", "Cloud Storage"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "GPSWORK",
+    description:
+      "With GPSWORK, company can tracking staff clock in and clock out time. Company also can view working report by day, month, year.", tags: ["Flutter", "Firebase", "Firestore", "Flutter Web", "Firebase Hosting", "Cloud Storage"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Khmer Legend Pro",
+    description:
+      "Digital Khmer Legend Book", tags: ["Flutter", "Firebase", "Firestore", "Flutter Web", "Firebase Hosting", "Cloud Storage"],
+    imageUrl: wordanalyticsImg,
+  },
+  ,
+  {
+    title: "Rean Cook",
+    description:
+      "With Rean Cook, you will get many and easy recipes, along with recipes and ingredients. In addition, there are more than 200 dishes in the Application. Enjoy your cooking with Rean Cook.", tags: ["Flutter", "Firebase", "Firestore", "Flutter Web", "Firebase Hosting", "Cloud Storage"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;

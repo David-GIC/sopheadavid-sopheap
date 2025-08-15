@@ -7,6 +7,8 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { FaFacebook, FaTelegram, FaLinkedin } from "react-icons/fa";
+
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -29,15 +31,52 @@ export default function Contact() {
         once: true,
       }}
     >
+      <div className="pt-[100px]"></div>
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+        <a className="underline" href="mailto:sopheadavidsopheap@gmail.com">
+          sopheadavidsopheap@gmail.com
         </a>{" "}
         or through this form.
       </p>
+
+      <div className="pt-[20px]"></div>
+
+      <motion.div
+        className="flex flex-row sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          delay: 0.1,
+        }}
+      >
+        <a
+          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://www.linkedin.com/in/sopheadavid-sopheap-9a936a180/"
+          target="_blank"
+        >
+          <FaLinkedin />
+        </a>
+        <div className="pw-[10px]"></div>
+
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://t.me/daviddev44"
+          target="_blank"
+        >
+          <FaTelegram />
+        </a>
+        <div className="pw-[10px]"></div>
+        <a
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+          href="https://facebook.com/nhomvid"
+          target="_blank"
+        >
+          <FaFacebook />
+        </a>
+      </motion.div>
 
       <form
         className="mt-10 flex flex-col dark:text-black"
